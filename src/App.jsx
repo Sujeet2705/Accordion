@@ -1,14 +1,13 @@
-import Accordian from './Components/accordianComponent.jsx'
+import Accordian from "./Components/accordianComponent.jsx";
+import "./App.css";
+import { data } from "./DummyData/data.js";
 
-function App(){
+function App() {
   return (
-    <>
-      <Accordian />
-      <Accordian />
-    </>
-  )
+    <div className="flex-container">
+      <Accordian data={data} />
+    </div>
+  );
 }
 
-export default App
-
-
+export default App;
